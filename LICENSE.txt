@@ -1,0 +1,46 @@
+Dual License Notice — Personal Use Allowed, Commercial Use Restricted
+
+Copyright (c) 2025 Ishtiak Ahmed
+
+This software is licensed under a dual license model:
+
+---
+
+👤 PERSONAL USE LICENSE (DEFAULT)
+
+Permission is hereby granted, free of charge, to any individual user obtaining a copy
+of this software and associated files (the “Software”), to use, modify, and share the Software
+for personal, non-commercial purposes only, subject to the following conditions:
+
+1. This license only applies to individuals using the Software for private, personal, or educational use.
+2. You may not use the Software in any commercial product, company project, or revenue-generating service.
+3. The author’s name ("Ishtiak") and this license text must be included in all copies or substantial portions of the Software.
+4. If you're unsure whether your use is personal or commercial, assume it's commercial — and see below.
+
+---
+
+🏢 COMMERCIAL LICENSE
+
+For any commercial, organizational, or company use — including but not limited to:
+
+- Use within a business or startup (internal tools or products)
+- Services that charge money or display ads
+- Embedded use in commercial apps, websites, or hardware
+- Any use that generates revenue, directly or indirectly
+
+A separate commercial license is required.
+
+To request a commercial license, contact the author: **ishtiakahmed2797@gmail.com**
+
+---
+
+🛑 NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Author: Ishtiak Ahmed

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>OLED Dot To Code with Undo/Redo Batching and Output Toggle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>OLED Dot To Code</h1>
+  <p class="subtitle">Convert pixel art to hex or binary code for OLED displays</p>
+</header>
+
+<form id="controlsForm" aria-label="Grid Controls">
+  <label for="colsInput">Columns:</label>
+  <input type="number" id="colsInput" value="128" min="1" max="512" aria-describedby="colsError" />
+  <span id="colsError" role="alert" style="color:red; font-weight:bold; display:none;">Invalid columns</span>
+  
+  <label for="rowsInput">Rows:</label>
+  <input type="number" id="rowsInput" value="64" min="1" max="256" aria-describedby="rowsError" />
+  <span id="rowsError" role="alert" style="color:red; font-weight:bold; display:none;">Invalid rows</span>
+
+  <button type="submit" id="generateBtn">Generate Grid</button>
+
+  <button type="button" id="undoBtn" disabled aria-label="Undo last pixel change">Undo</button>
+  <button type="button" id="redoBtn" disabled aria-label="Redo last undone pixel change">Redo</button>
+
+  <br />
+
+  <fieldset id="outputFormatFieldset" aria-label="Select output format">
+    <legend>Output format:</legend>
+    <input type="radio" id="formatBinary" name="outputFormat" value="binary" />
+    <label for="formatBinary">Binary</label>
+
+    <input type="radio" id="formatHex" name="outputFormat" value="hex" checked />
+    <label for="formatHex">Hexadecimal</label>
+  </fieldset>
+</form>
+
+<div id="dropArea" tabindex="0" aria-label="Drag and drop an image file here or click to upload">
+  Drag & Drop Image Here or Click to Upload Image to Convert
+</div>
+
+<input type="file" id="imageInput" accept="image/*" style="display:none;" />
+
+<span id="selectedFileName" aria-live="polite" aria-atomic="true"></span>
+<span id="uploadStatus" aria-live="polite" aria-atomic="true"></span>
+
+<div id="gridContainer">
+  <table id="pixelGrid" aria-label="Pixel grid"></table>
+</div>
+
+<!-- Button group containing Toggle Output and Copy buttons -->
+<div id="buttonGroup" role="group" aria-label="Output controls">
+  <button id="toggleOutputBtn" aria-expanded="false" aria-controls="codeOutput" aria-label="Show output code">Show Output</button>
+  <button id="copyBtn" title="Copy code">Copy</button>
+</div>
+
+<!-- Output code block -->
+<pre id="codeOutput" aria-live="polite" hidden></pre>
+
+<!-- Hidden canvas for image processing -->
+<canvas id="hiddenCanvas" style="display:none;"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
